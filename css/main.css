@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,400;1,300&display=swap');
+
+/* Custom Property*/
+:root{
+    --leading: 2em;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+}
+
+
+.hero-bg {
+    background-color: #bbd4dd;
+    background-image: url('../images/bg1.jfif');
+    background-position: 40% 50%;
+    color: rgb(245, 237, 237);
+    text-align: center;
+    padding: 4em;
+}
+
+
+header{
+    padding: 1em 0;    
+}
+
+.hero-bg a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section{
+    margin: 0 1em;
+}
+
+h1{
+    font-size: 1.3em;
+    margin: 2em 0 1.2em;
+}
+
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    position: relative;
+}
+
+#flv{
+    text-shadow: 2px 2px 5px rgba(182, 60, 44, 0.918);
+  }
+#of{
+    color:blue;
+    text-shadow: 2px 2px 5px rgb(13, 54, 100);
+  }
+#ind{
+    text-shadow: 2px 2px 5px rgb(49, 90, 11);
+  }
+
+/*underline style on-The Healthy*/
+#flv::before{
+    content: '';
+    position: absolute;
+    width: 9em;
+    background: rgb(230, 108, 9);
+    height: .5em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+#of::before{
+    content: '';
+    position: absolute;
+    width: 9em;
+    background: rgb(255, 255, 255);
+    height: .5em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+#ind::before{
+    content: '';
+    position: absolute;
+    width: 9em;
+    background: rgb(28, 117, 17);
+    height: .5em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+
+/*style for 1st paragraph*/
+.hero-bg p{
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+/*form container style*/
+.form-container{
+    background-color: rgb(228, 216, 195);
+    margin: 2em -5em 0;
+    padding: 2em;
+}
+
+label{
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    bottom: 1em;
+    font-size: 1.2em;
+}
+
+/*style for input box*/
+input[type=text]{
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    box-sizing: border-box;
+    margin-top: 1.2em;
+}
+
+/*style for example text*/
+.form-container p{
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+}
+
+/*style for button*/
+input[type=button]{
+   background-color: #F89104;
+   border: none;
+   color: white;
+   width: 100%;
+   font-weight: bold;
+   padding: 1em 0;
+   border-radius: .5em;
+   font-size: 1.3em;
+   cursor: pointer;
+}
+
+/*style for button hover*/
+input[type=button]:hover{
+    background-color: #d17b02;
+   
+ }
+
+ img {
+     width: 100%;
+     border-radius: 25px;
+     
+ }
+
+.right-col{
+     text-align: center;
+     margin: 3em 1em;
+ }
+
+ h2{
+     text-transform: uppercase;
+     position: relative;
+ }
+
+ /*underline style on-Authentic */
+h2::before{
+    content: '';
+    position: absolute;
+    width: 8em;
+    background: #4edb7d;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+p{
+    line-height:  var(--leading);
+}
+
+/*after clicking the button*/
+.overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    background: rgba(0,0,0,.8);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: none;
+    opacity: 0;
+}
+
+.animate-overlay{
+    animation: overlay 3s forwards;
+}
+
+/* images for food*/
+.fpics{
+    width: 140px;
+    height: 150px;
+    margin: 2% 2% 4% 0;
+    border-radius: 50%;
+    transition: 1s;
+}
+.fpics:hover{
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+/*Flipping image for Connect With Us*/
+.flip-box {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 600px;
+    height: 600px; 
+  }
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /*safari code*/
+    backface-visibility: hidden;
+  }
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-box-back {
+    background: linear-gradient(orange,white,green);
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+  }
+
+/*Social media icons*/
+.wrapper .button{
+    display: block;
+    height: 60px;
+    width: 60px;
+    float: bottom;
+    margin: 35px 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #1176d4;
+  }
+  .wrapper .button:nth-child(5):hover .icon{
+    background: #ff0000;
+  }
+  .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #1176d4;
+  }
+  .wrapper .button:nth-child(5) span{
+    color: #ff0000;
+  }
+
+
+ /*width of the screen above 730px layout will change*/
+@media (min-width: 730px){
+    section{
+        margin: 0 4em;
+    }
+    .form-container{
+        margin: 2em -8em 0;
+    }
+}
+
+ /*width of the screen above 930px layout will change*/
+ @media (min-width: 930px){
+     .hero-bg{
+         background-position: 5% 20%;
+         text-align: left;
+     }
+     .hero-bg{
+        margin: 0 0 3em;
+    }
+    .hero-bg section{
+        width: 65%;
+    }
+    .form-container{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+    }
+
+
+    form{
+        display: flex;
+    }
+    .form-left{
+        width: 70%;
+    }
+    label{
+        margin: 0;
+    }
+    input[type="button"]{
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 2.2em;
+        padding: .7em 0;
+        width: 30%;
+    }
+    .hero-bg p{
+        margin-bottom: 0;
+    }
+
+    /*setting bottom image and text side-by-side*/
+    section.authentic{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "image content";
+    }
+    .right-col{
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+
+    }
+    img{
+        grid-area: image;
+    }
+    h2{
+        margin: 0;
+    }
+    .overlay{
+        position: absolute;
+        height: 180vh;
+        width: 180vh;
+        background: rgba(0,0,0,.8);
+        z-index: 1;
+        place-content: center;
+        color: white;
+        display: none;
+        opacity: 0;
+    }
+
+}
+
+
+/*animation*/
+.top {
+    animation: fadeIn 2s forwards;
+}
+
+/*here it provides custom function for fadeIn variable*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes overlay{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.p1{
+    text-shadow: 2px 2px 5px red;
+  }

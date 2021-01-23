@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/script1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Seraching now</h3>
+    </div>
+   <div class="hero-bg">
+       <section class="top">
+            <header>
+                <h1><span id="flv">Flavours</span>
+                    <span id="of">Of</span>
+                    <span id="ind">India</span>
+                </h1>
+            </header>
+
+
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quas atque sapiente cupiditate esse quisquam hic minima sint consequuntur quis.</p>
+            
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Toronto"</p>
+                    </div>
+
+                    <input type="button" value="Order Now" id="btn">
+                </form>
+            </div>            
+    </div>
+        </section>
+
+       <section class="authentic">
+           <div class="right-col">
+               <h2>Authentic Indian Cuisine</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis tempore iure, ad voluptate praesentium perspiciatis autem recusandae dolor vel vitae.</p>
+                    <div>
+                        <img src="images/pav-bhaji.jfif"  alt="Pav-Bhaji" class="fpics">
+                        <img src="images/paneer.jfif"  alt="Pav-Bhaji" class="fpics">
+                        <img src="images/prwans.jfif"  alt="Pav-Bhaji" class="fpics">
+                        <img src="images/samosa.jfif"  alt="Pav-Bhaji" class="fpics">
+                        <img src="images/dal.jfif"  alt="Pav-Bhaji" class="fpics">
+                        <img src="images/biryani.jfif"  alt="Pav-Bhaji" class="fpics">
+                    </div>
+           </div>
+
+           <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/spoon.jfif"  alt="Picture Here" >
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Connect With Us</h2>
+                        
+                        <div class="wrapper">
+
+                            <div class="button">
+                              <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <span>Facebook</span>
+                            </div>
+
+                            <div class="button">
+                                <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                                </div>
+                                <span>Twitter</span>
+                            </div>
+
+                            <div class="button">
+                                <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                                </div>
+                                <span>Instagram</span>
+                            </div>
+
+                            <div class="button">
+                                <div class="icon">
+                                <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>Linked In</span>
+                            </div>
+
+                            <div class="button">
+                                <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                                </div>
+                                <span>YouTube</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+       </section>
+
+       <script>
+           let clk = document.getElementById('btn');
+            let overlay = document.getElementById('overlay');
+            clk.addEventListener('click', () => {
+            overlay.style.display= 'grid';
+            overlay.classList.add('animate-overlay')
+})
+       </script>
+   
+</body>
+</html>
